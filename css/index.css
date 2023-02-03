@@ -1,0 +1,261 @@
+@import 'fonts.css';
+@import 'variables.css';
+
+html {
+    font-family: 'GT America', sans-serif;
+    font-size: 24px;
+    min-height: 100vh;
+}
+
+/* =====================> HEADER <====================== */
+
+.topbar-container {
+    height: 88px;
+    display: flex;
+    background-color: var(--black);
+}
+
+.topbar-container a {
+    color: var(--white);
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 90px;
+    width: 100%;
+    height: 100%;
+}
+
+.topbar-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.topbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 2px solid var(--white);
+}
+
+.topbar-logo img {
+    width: 32px;
+}
+
+.topbar-button {
+    display: none;
+}
+
+.topbar-controls-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    z-index: 1;
+}
+
+.topbar-controls-wrapper .btn {
+    border-radius: 10px;
+}
+
+.topbar-controls-wrapper .btn.submit {
+    padding: 10px 25px;
+    border: 1px solid var(--white);
+    background: transparent;
+    transition: all .15s linear;
+}
+
+.topbar-controls-wrapper .btn.submit:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.topbar-controls-wrapper .btn.login {
+    padding: 12px 40px;
+    background-color: var(--lilac);
+    transition: all .15s linear;
+}
+
+.topbar-controls-wrapper .btn.login:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* =====================> MAIN <====================== */
+
+.search-section {
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-inner {
+    padding-top: 100px;
+    padding-bottom: 115px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.search-inner .search-title {
+    font-size: 46px;
+    font-weight: normal;
+}
+
+.search-inner .search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 720px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.150);
+}
+
+.search-inner .search-box input {
+    width: 100%;
+    padding: 20px;
+    font-size: 18.5px;
+    letter-spacing: 1px;
+}
+
+.search-inner .search-box img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 30px;
+    background-color: var(--white);
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1203px;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 180px 0;
+}
+
+.info {
+    display: flex;
+    height: 238px;
+    width: 571px;
+}
+
+.info-5,
+.info-6 {
+    margin-top: 45px;
+}
+
+.info:nth-child(odd) {
+    margin-right: 60px;
+}
+
+.info-icon {
+    width: 20%;
+}
+
+.info-icon img {
+    width: 87px;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+
+.info-content h4 {
+    font-weight: 600;
+}
+
+.info-content a {
+    margin-top: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--lilac);
+}
+
+.info-content a:hover {
+    text-decoration: underline;
+}
+
+/* =====================> FOOTER <====================== */
+
+.footer-container {
+    position: relative;
+    background-color: var(--black);
+    min-height: 400px;
+    padding: 50px 80px;
+}
+
+.footer-inner {
+    display: flex;
+    gap: 160px;
+    flex-wrap: wrap;
+}
+
+
+.footer-inner h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer-inner, .footer-inner a {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.footer-inner a:hover {
+    text-decoration: underline;
+}
+
+.footer-inner img {
+    width: 32px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-column a:nth-child(2) {
+    margin-top: 10px;
+}
+
+.footer-column:nth-child(4) strong{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.footer-column-copyright {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-column-copyright p {
+    font-size: 20px;
+}
+
+.footer-column-copyright p:nth-child(2) {
+    margin-left: 10px;
+}
